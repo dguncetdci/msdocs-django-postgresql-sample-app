@@ -53,7 +53,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+# Other settings...
+
+# Use the default session backend (database-backed sessions)
+SESSION_ENGINE = "django.contrib.sessions.backends.db"
+
+# Other settings...
+
 ROOT_URLCONF = 'azureproject.urls'
 
 TEMPLATES = [
