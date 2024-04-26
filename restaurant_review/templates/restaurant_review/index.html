@@ -1,6 +1,6 @@
 {% extends "restaurant_review/base.html" %}
 {% load restaurant_extras %}
-{% block title %}Restaurant List{% endblock %}
+{% block title %}Project List{% endblock %}
 {% block head %}
     {{ block.super }}
     <style>
@@ -71,6 +71,6 @@
   {% endif %}
 
   <div class="d-flex justify-content-end">
-          <a href="{% url 'create_restaurant' %}" class="btn btn-success px-4 gap-3">Add new restaurant</a>
+          <a href="{% url 'create_restaurant' %}" class="btn btn-success px-4 gap-3">Add new project</a>
   </div>
 {% endblock %}
